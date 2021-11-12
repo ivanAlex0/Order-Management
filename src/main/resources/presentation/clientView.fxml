@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="510.0" prefWidth="985.0" style="-fx-background-color: #52CEFE; -fx-border-width: 3; -fx-border-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.ClientView">
+    <children>
+        <Button layoutX="391.0" layoutY="230.0" mnemonicParsing="false" onAction="#fetchAllClients" prefHeight="26.0" prefWidth="72.0" text="Update">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+        <TextField fx:id="nameInsert" layoutX="75.0" layoutY="143.0">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></TextField>
+        <Button layoutX="280.0" layoutY="143.0" mnemonicParsing="false" onAction="#showInsert" prefHeight="26.0" prefWidth="66.0" text="Insert">
+         <font>
+            <Font name="Britannic Bold" size="15.0" />
+         </font></Button>
+        <Line endX="16.39996337890625" endY="401.9999694824219" layoutX="351.0" layoutY="105.0" startX="16.39996337890625" startY="-101.99999237060547" style="-fx-stroke-width: 2;" />
+        <TextField fx:id="emailInsert" layoutX="75.0" layoutY="192.0">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></TextField>
+        <Button fx:id="insert" layoutX="114.0" layoutY="241.0" mnemonicParsing="false" onAction="#insertClient" prefHeight="26.0" prefWidth="72.0" text="Insert">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+        <TableView fx:id="tableView" layoutX="484.0" layoutY="17.0" onMouseClicked="#setEditDetails" prefHeight="476.0" prefWidth="486.0" style="-fx-background-color: #BDFAFF; -fx-border-color: black; -fx-border-width: 2;" />
+        <TextField fx:id="nameEdit" layoutX="75.0" layoutY="349.0">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></TextField>
+        <TextField fx:id="emailEdit" layoutX="75.0" layoutY="394.0">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></TextField>
+        <Button layoutX="278.0" layoutY="349.0" mnemonicParsing="false" onAction="#showEdit" prefHeight="26.0" prefWidth="66.0" text="Edit">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+        <Button fx:id="edit" layoutX="115.0" layoutY="434.0" mnemonicParsing="false" onAction="#editClient" prefHeight="26.0" prefWidth="72.0" text="Edit">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+        <Button layoutX="280.0" layoutY="241.0" mnemonicParsing="false" onAction="#deleteClient" prefHeight="26.0" prefWidth="66.0" text="Delete">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+        <Button layoutX="389.0" layoutY="426.0" mnemonicParsing="false" onAction="#goToOrders" prefHeight="26.0" prefWidth="76.0" text="Orders">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+        <Button layoutX="389.0" layoutY="384.0" mnemonicParsing="false" onAction="#goToProducts" text="Products">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+      <Text layoutX="14.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="79.09496688842773">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="14.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="71.99999999999989">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="391.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go to:" wrappingWidth="52.694976806640625">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font></Text>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="374.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@refresh+reload+update+icon-1320191166843452904.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="14.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="79.09496688842773">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="71.99999999999989">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="132.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client" wrappingWidth="79.09496688842773">
+         <font>
+            <Font name="Britannic Bold" size="30.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="177.0" layoutY="53.0" startX="-100.0" />
+      <Line endX="264.60003662109375" layoutX="101.0" layoutY="281.0" startX="-100.0" style="-fx-stroke-width: 2;" />
+      <Text layoutX="14.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a new cliet" wrappingWidth="143.09496688842773">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="37.19999694824219" endY="1.52587890625E-5" layoutX="110.0" layoutY="118.0" startX="-100.0" />
+      <Text layoutX="14.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit an existing client" wrappingWidth="173.4949607849121">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="77.49494934082031" layoutX="110.0" layoutY="318.0" startX="-100.0" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="375.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Product_Package_Update_Sync-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="376.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@65049.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

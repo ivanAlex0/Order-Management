@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="510.0" prefWidth="985.0" style="-fx-background-color: #6AFC77; -fx-border-color: black; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.OrderView">
+    <children>
+        <Button layoutX="382.0" layoutY="120.0" mnemonicParsing="false" onAction="#fetchAllClients" prefHeight="26.0" prefWidth="86.0" text="Clients">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+        <Line endX="16.39996337890625" endY="407.4000244140625" layoutX="337.0" layoutY="104.0" startX="16.39996337890625" startY="-101.99999237060547" style="-fx-stroke-width: 2;" />
+        <TableView fx:id="tableView" layoutX="484.0" layoutY="17.0" onMouseClicked="#setEditDetails" prefHeight="476.0" prefWidth="486.0" style="-fx-background-color: #E8FBE9; -fx-border-color: black; -fx-border-width: 2;" />
+        <TextField fx:id="productIdEdit" layoutX="103.0" layoutY="391.0">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></TextField>
+        <TextField fx:id="quantityEdit" layoutX="103.0" layoutY="431.0">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></TextField>
+        <Button layoutX="281.0" layoutY="362.0" mnemonicParsing="false" onAction="#showEdit" prefHeight="26.0" prefWidth="66.0" text="Edit">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+        <Button fx:id="edit" layoutX="132.0" layoutY="465.0" mnemonicParsing="false" onAction="#editOrder" prefHeight="26.0" prefWidth="72.0" text="Edit">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+        <Button layoutX="281.0" layoutY="405.0" mnemonicParsing="false" onAction="#deleteOrder" prefHeight="26.0" prefWidth="66.0" text="Delete">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+        <Button layoutX="383.0" layoutY="452.0" mnemonicParsing="false" onAction="#goToProducts" prefHeight="26.0" prefWidth="85.0" text="Products">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+        <Button layoutX="383.0" layoutY="418.0" mnemonicParsing="false" onAction="#goToClients" prefHeight="26.0" prefWidth="85.0" text="Clients">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="382.0" layoutY="162.0" mnemonicParsing="false" onAction="#fetchAllProducts" prefHeight="26.0" prefWidth="85.0" text="Products">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="381.0" layoutY="203.0" mnemonicParsing="false" onAction="#fetchAllOrders" prefHeight="26.0" prefWidth="86.0" text="Orders">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="82.0" layoutY="241.0" mnemonicParsing="false" onAction="#placeOrder" text="Create Order">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="clientId" layoutX="118.0" layoutY="108.0">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="productId" layoutX="118.0" layoutY="148.0">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="quantity" layoutX="118.0" layoutY="190.0">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="clientIdEdit" layoutX="103.0" layoutY="349.0">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></TextField>
+      <Button layoutX="210.0" layoutY="242.0" mnemonicParsing="false" onAction="#createTxtOrders" text="CreateTxts">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Button>
+      <Text layoutX="10.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ClientId:" wrappingWidth="72.0">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="14.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ProductId:" wrappingWidth="86.40000000000009">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="15.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity:" wrappingWidth="84.80000000000001">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="400.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Go to:" wrappingWidth="52.694976806640625">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="397.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Display:" wrappingWidth="72.0">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="21.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ClientId:" wrappingWidth="72.0">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="21.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ProductId:" wrappingWidth="84.80000000000001">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="21.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity:" wrappingWidth="72.0">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="132.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders" wrappingWidth="116.00001525878906">
+         <font>
+            <Font name="Britannic Bold" size="30.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="178.0" layoutY="47.0" startX="-100.0" />
+      <Line endX="247.79998779296875" layoutX="105.0" layoutY="281.0" startX="-100.0" style="-fx-stroke-width: 2;" />
+      <Text layoutX="16.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit an existing order" wrappingWidth="200.99999999999994">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="105.0" layoutY="321.0" startX="-100.0" />
+      <Text layoutX="15.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create a new order" wrappingWidth="156.0">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="105.0" layoutY="90.0" startX="-100.0" />
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="366.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@65049.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="366.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Product_Package_Update_Sync-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="366.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@refresh+reload+update+icon-1320191166843452904.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

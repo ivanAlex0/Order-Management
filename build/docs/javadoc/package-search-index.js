@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"businessLayer.controller"},{"l":"businessLayer.reflection"},{"l":"dataAccessLayer.bll"},{"l":"dataAccessLayer.bll.validators"},{"l":"dataAccessLayer.connection"},{"l":"dataAccessLayer.dao"},{"l":"model"},{"l":"presentation"},{"l":"start"}];updateSearchResults();
